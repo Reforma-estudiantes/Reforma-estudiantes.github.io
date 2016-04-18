@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+  .jumbotron {
+      background-color: #000066;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #000066;
+      font-size: 50px;
+  }
+  .logo {
+      color: #000066;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #000066;
+  }
+  .carousel-indicators li {
+      border-color: #000066;
+  }
+  .carousel-indicators li.active {
+      background-color: #000066;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #000066;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #000066;
+      background-color: #fff !important;
+      color: #000066;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #000066 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #000066;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #000066;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #000066 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #000066;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Reforma</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Reforma!</h1>
+  <p>Asociacion de estudiantes</p>
+
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Puntos de carga Para moviles en la universidad</h2><br>
+      <h4>En Reforma! creemos que una verdadera universidad del siglo XXI debe adaptarse a los nuevos tiempos asi como a las necesidades de las nuevas tecnologías.</h4><br>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-flash logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-piggy-bank logo"></span>    </div>
+    <div class="col-sm-8">
+      <h2>Abaratar los precios de los cursos propios de la uma y que se impartan tanto en la ampliacion como en el egido</h2><br>
+      <h4>Dado que a los estudiantes nos exigen tener el b1 para poder tener nuestro titulo universitario, desde Reforma queremos garantizar que todos los alumnos de todos los centros puedan acceder con las mismas oportunidades a los cursos de la fundación.</h4><br>
+    </div>
+  </div>
+</div>
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Ampliar el recorrido de la linea 11 hasta la ampliación</h2><br>
+      <h4>Queremos que ue la linea 11 de la emt llegue tambien a los alumnos de la ampliación.</h4><br>
+
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-road logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-list-alt logo"></span>    </div>
+    <div class="col-sm-8">
+      <h2>segunda convocatoria</h2><br>
+      <h4> Estos dias se esta debatiendo sobre la posibilidad de cambiar de fecha la segunda convocatoria ordinaria, es por ello que vemos necesario que los alumnos podamos expresar nuestro pensamiento mediante una votación abierta, en la que se escuche a los estudiantes.</h4><br>
+      </div>
+  </div>
+</div>
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Cargadores para coches electricos</h2><br>
+      <h4>Desde Reforma! queremos fomentar el uso de vehiculos electricos, es por ello que creemos que la universidad debe proporcionar la infraestructura necesaria para que cada vez mas alumnos se pasen a los vehiculos eléctricos..</h4><br>
+      </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo"></span>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>    </div>
+    <div class="col-sm-8">
+      <h2>Mejorar la red Wi-Fi</h2><br>
+      <h4>Actualmente la red wi-fi de la universidad funcionan mediante servidores "proxy" los cuales restringen el trafico de datos imposivilitando el uso de determinadas herramientas tales como repositorios on line asi como otras aplicaciones y servicios web.En Reforma! queremos que estos servidores proxys se eliminen o que se adapten para permitir un mayor abanico de trafico de datos.</h4><br>
+      </div>
+  </div>
+</div>
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Deportes minoritarios</h2>
+      <h4>Cada vez deportes como el Rugbby o el Quiditch tienen mas acogida entre los alumnos de nuestra universidad, es por ello que pedimos que la UMA les de el reconocimiento que se merece facilitandole el acceso a materiales y a instalaciones.</h4><br>
+          </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-tower logo"></span>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="container-fluid bg-grey"style="min-height:100%">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Si tienes un problema con algún profesor o con alguna asignatura;o si tienes dudas, no dudes en ponerte
+        en contacto con nosotros.</p>
+
+    </div>
+
+    <div class="col-sm-7 slideanim">
+      <form action="https://docs.google.com/a/uma.es/forms/d/1whzmcbhk9w1Sr0BJ8sWeLKXlE-jwImMoTUVt4x4PPYM/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" >
+
+
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" placeholder="Name" type="text" name="entry.986398545" value="" class="ss-q-short" id="entry_986398545" dir="auto" aria-label="Nombre  " aria-required="true" required="" title="">
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" type="email" placeholder="email" name="entry.55968225" value="" class="ss-q-short" id="entry_55968225" dir="auto" aria-label="email  Debe ser una dirección de correo electrónico válida" aria-required="true" required="" title="Debe ser una direcci&oacute;n de correo electr&oacute;nico v&aacute;lida">
+        </div>
+      </div>
+      <textarea class="form-control" name="entry.945878854" rows="8" cols="0" class="ss-q-long" id="entry_945878854" dir="auto" aria-label="comentario  " aria-required="true" required="" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a[id='innerScroll'], footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
